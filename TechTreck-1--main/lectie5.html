@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecția 5: Semantica HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo COCIOABA DE ÎNVĂȚAT" style="max-width: 300px;">
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Lecția 5: Semantica HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="lectii.html">Lecții</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lectie1.html">Lecția 1: Introducere în HTML</a></li>
+                        <li><a href="lectie2.html">Lecția 2: Structura HTML</a></li>
+                        <li><a href="lectie3.html">Lecția 3: Etichete HTML</a></li>
+                        <li><a href="lectie4.html">Lecția 4: Elemente Avansate HTML</a></li>
+                        <li><a href="lectie5.html">Lecția 5: Semantica HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 6</a></li>
+                        <li><a href="ComingSoon.html">Lecția 7</a></li>
+                        <li><a href="ComingSoon.html">Lecția 8</a></li>
+                        <li><a href="ComingSoon.html">Lecția 9</a></li>
+                        <li><a href="ComingSoon.html">Lecția 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Test de evaluare</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Înregistrare</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Introducere în Semantica HTML</h3>
+            <p>Semantica HTML se referă la utilizarea etichetelor HTML pentru a descrie semnificația conținutului dintr-o pagină web. Utilizarea etichetelor semantice îmbunătățește accesibilitatea și SEO-ul paginii web, oferind context suplimentar despre structura și rolul diferitelor părți ale conținutului.</p>
+        </section>
+
+        <section>
+            <h3>Etichete Semantice HTML</h3>
+            <p>Etichetele semantice ajută la structurarea documentelor HTML într-un mod care reflectă înțelesul și scopul conținutului. Iată câteva exemple comune:</p>
+            <section>
+            <article>
+                <h4>Exemplu de Articol</h4>
+                <p>Un articol reprezintă un bloc de conținut care ar putea fi distribuit independent. De exemplu, un post pe blog sau o știre ar putea fi prezentată într-un articol.</p>
+                <details>
+                    <summary>Vezi codul HTML pentru Articol</summary>
+                    <pre class="code-container"><code>&lt;article&gt;
+    &lt;h4&gt;Exemplu de Articol&lt;/h4&gt;
+    &lt;p&gt;Un articol reprezintă un bloc de conținut care ar putea fi distribuit independent. De exemplu, un post pe blog sau o știre ar putea fi prezentată într-un articol.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                </details>
+            </article>
+        </section>  
+
+        <section>
+                <h4>Exemplu de Secțiune</h4>
+                <p>O secțiune este un bloc de conținut care se referă la un subiect specific în cadrul unui document. De exemplu, o secțiune într-o pagină de documentație sau într-un raport.</p>
+                <details>
+                    <summary>Vezi codul HTML pentru Secțiune</summary>
+                    <pre class="code-container"><code>&lt;section&gt;
+    &lt;h4&gt;Exemplu de Secțiune&lt;/h4&gt;
+    &lt;p&gt;O secțiune este un bloc de conținut care se referă la un subiect specific în cadrul unui document. De exemplu, o secțiune într-o pagină de documentație sau într-un raport.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                </details>
+        </section>
+
+
+        <section>
+            <header class="example-header">
+                <h4>Exemplu de Header</h4>
+                <p>Header-ul este utilizat pentru a conține informații introductive sau de navigare, de obicei la începutul unui document sau al unei secțiuni.</p>
+                <details>
+                    <summary>Vezi codul HTML pentru Header</summary>
+                    <pre class="code-container"><code>&lt;header&gt;
+    &lt;h4&gt;Exemplu de Header&lt;/h4&gt;
+    &lt;p&gt;Header-ul este utilizat pentru a conține informații introductive sau de navigare, de obicei la începutul unui document sau al unei secțiuni.&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+                </details>
+            </header class="example-header">
+        </section>
+            
+        <section>
+            <footer class="example-footer">
+                <h4>Exemplu de Footer</h4>
+                <p>Footer-ul conține de obicei informații despre autor, date de contact, sau note suplimentare.</p>
+                <details>
+                    <summary>Vezi codul HTML pentru Footer</summary>
+                    <pre class="code-container"><code>&lt;footer&gt;
+    &lt;h4&gt;Exemplu de Footer&lt;/h4&gt;
+    &lt;p&gt;Footer-ul conține de obicei informații despre autor, date de contact, sau note suplimentare.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                </details>
+            </footer class="example-footer">
+        </section>
+
+        <section>
+            <nav class="example-nav">
+                <h4>Exemplu de Nav</h4>
+                <p>Elementul nav este utilizat pentru a defini o secțiune de navigare a site-ului.</p>
+                <details>
+                    <summary>Vezi codul HTML pentru Nav</summary>
+                    <pre class="code-container"><code>&lt;nav&gt;
+    &lt;h4&gt;Exemplu de Nav&lt;/h4&gt;
+    &lt;p&gt;Elementul nav este utilizat pentru a defini o secțiune de navigare a site-ului.&lt;/p&gt;
+&lt;/nav&gt;</code></pre>
+                </details>
+            </nav class="example-nav">
+        </section>
+    </section>
+
+        <section>
+            <h3>Concluzie</h3>
+            <p>În această lecție, am explorat etichetele semantice HTML și importanța utilizării acestora pentru a structura documentele web într-un mod care reflectă sensul și funcția conținutului. În lecțiile viitoare, vom continua să aprofundăm cunoștințele despre HTML și CSS pentru a crea pagini web mai sofisticate.</p>
+            <p><a href="lectie6.html">Continuă cu Lecția 6: CSS pentru Stilizarea Paginii</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COCIOABA DE ÎNVĂȚAT. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet HTML  - COCIOABA DE ÎNVĂȚAT</title>
+
+    <meta name="description" content="Contactează-ne pentru întrebări sau sugestii. Completează formularul nostru de contact și vom reveni la tine cât mai curând posibil.">
+    <meta name="keywords" content="contact, formular de contact, COCIOABA DE ÎNVĂȚAT, întrebări, sugestii">
+    <meta name="author" content="COCIOABA DE ÎNVĂȚAT">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo COCIOABA DE ÎNVĂȚAT" style="max-width: 300px;">
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Cheat Sheet HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="lectii.html">Lecții</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lectie1.html">Lecția 1: Introducere în HTML</a></li>
+                        <li><a href="lectie2.html">Lecția 2: Structura HTML</a></li>
+                        <li><a href="lectie3.html">Lecția 3: Etichete HTML</a></li>
+                        <li><a href="lectie4.html">Lecția 4: Elemente Avansate HTML</a></li>
+                        <li><a href="lectie5.html">Lecția 5: Semantica HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 6: Avansuri HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 7: Formulare HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 8: Multimedia HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 9: Interactivitate HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 10: Optimizare HTML</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Test de evaluare</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Înregistrare</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Cheat Sheet HTML</h3>
+            <p>Aici este un ghid rapid al celor mai utilizate etichete HTML și sintaxa lor. Folosește această pagină pentru a revizui etichetele HTML de bază și pentru a te ajuta să construiești pagini web.</p>
+
+            <h4>1. Structura de bază a unui document HTML</h4>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ro"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Titlu&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Titlu principal&lt;/h1&gt;
+        &lt;p&gt;Paragraf&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h4>2. Etichete de text</h4>
+            <ul>
+                <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Titluri de diferite niveluri</li>
+                <li><strong>&lt;p&gt;</strong>: Paragraf</li>
+                <li><strong>&lt;b&gt;</strong>: Text îngroșat (bold)</li>
+                <li><strong>&lt;i&gt;</strong>: Text italic</li>
+                <li><strong>&lt;u&gt;</strong>: Text subliniat</li>
+                <li><strong>&lt;br&gt;</strong>: Săgeată pentru o linie nouă</li>
+                <li><strong>&lt;blockquote&gt;</strong>: Citat</li>
+            </ul>
+
+            <h4>3. Liste</h4>
+            <ul>
+                <li><strong>&lt;ul&gt;</strong>: Listă neordonată</li>
+                <li><strong>&lt;ol&gt;</strong>: Listă ordonată</li>
+                <li><strong>&lt;li&gt;</strong>: Element de listă</li>
+            </ul>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Element 1&lt;/li&gt;
+    &lt;li&gt;Element 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Element 1&lt;/li&gt;
+    &lt;li&gt;Element 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h4>4. Link-uri și imagini</h4>
+            <ul>
+                <li><strong>&lt;a&gt;</strong>: Link</li>
+                <li><strong>&lt;img&gt;</strong>: Imagine</li>
+            </ul>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Vizitează acest site&lt;/a&gt;
+&lt;img src="imagine.jpg" alt="Descriere imagine"&gt;</code></pre>
+
+            <h4>5. Tabele</h4>
+            <ul>
+                <li><strong>&lt;table&gt;</strong>: Tabellă</li>
+                <li><strong>&lt;tr&gt;</strong>: Linie de tabel</li>
+                <li><strong>&lt;th&gt;</strong>: Celulă de antet</li>
+                <li><strong>&lt;td&gt;</strong>: Celulă de tabel</li>
+            </ul>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Antet 1&lt;/th&gt;
+        &lt;th&gt;Antet 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celulă 1&lt;/td&gt;
+        &lt;td&gt;Celulă 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h4>6. Etichete semantice HTML5</h4>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Antetul paginii</li>
+                <li><strong>&lt;nav&gt;</strong>: Navigare</li>
+                <li><strong>&lt;main&gt;</strong>: Conținutul principal</li>
+                <li><strong>&lt;section&gt;</strong>: Secțiune</li>
+                <li><strong>&lt;article&gt;</strong>: Articol</li>
+                <li><strong>&lt;footer&gt;</strong>: Subsolul paginii</li>
+            </ul>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;Titlu&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;a href="index.html"&gt;Acasă&lt;/a&gt;
+        &lt;a href="about.html"&gt;Despre&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Secțiune&lt;/h2&gt;
+        &lt;p&gt;Textul secțiunii&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&copy; 2024 COCIOABA DE ÎNVĂȚAT&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COCIOABA DE ÎNVĂȚAT. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+
+</html>

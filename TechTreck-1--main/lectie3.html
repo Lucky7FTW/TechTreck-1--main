@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecție 3: Etichete HTML - COCIOABA DE ÎNVĂȚAT</title>
+
+    <meta name="description" content="Învață despre etichetele HTML esențiale și cum să le folosești pentru a structura și organiza o pagină web. Lecția 3 din seria COCIOABA DE ÎNVĂȚAT.">
+    <meta name="keywords" content="HTML, etichete HTML, tutorial HTML, învățare HTML, dezvoltare web">
+    <meta name="author" content="COCIOABA DE ÎNVĂȚAT">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo COCIOABA DE ÎNVĂȚAT" style="max-width: 300px;">
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Lecția 3: Etichete HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="lectii.html">Lecții</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lectie1.html">Lecția 1: Introducere în HTML</a></li>
+                        <li><a href="lectie2.html">Lecția 2: Structura HTML</a></li>
+                        <li><a href="lectie3.html">Lecția 3: Etichete HTML</a></li>
+                        <li><a href="lectie4.html">Lecția 4: Elemente Avansate HTML</a></li>
+                        <li><a href="lectie5.html">Lecția 5: Semantica HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 6</a></li>
+                        <li><a href="ComingSoon.html">Lecția 7</a></li>
+                        <li><a href="ComingSoon.html">Lecția 8</a></li>
+                        <li><a href="ComingSoon.html">Lecția 9</a></li>
+                        <li><a href="ComingSoon.html">Lecția 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Test de evaluare</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Înregistrare</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Ce sunt etichetele HTML?</h3>
+            <p>Etichetele HTML (sau "taguri") sunt elemente esențiale care definesc structura și conținutul unei pagini web. Fiecare etichetă are un scop specific și este utilizată pentru a formata textul, a afișa imagini, a crea link-uri și multe altele.</p>
+        </section>
+
+        <section>
+            <h3>Etichete HTML de bază</h3>
+            <p>Mai jos sunt câteva dintre cele mai comune etichete HTML, împreună cu exemple pentru fiecare:</p>
+            <ul>
+                <li>
+                    <strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Etichetele pentru titluri.
+                    <pre><code>&lt;h1&gt;Acesta este un titlu mare&lt;/h1&gt;
+&lt;h2&gt;Acesta este un titlu mai mic&lt;/h2&gt;
+&lt;h3&gt;Acesta este un titlu și mai mic&lt;/h3&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;p&gt;</strong>: Eticheta pentru paragrafe de text.
+                    <pre><code>&lt;p&gt;Acesta este un paragraf de text.&lt;/p&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;a&gt;</strong>: Eticheta pentru link-uri.
+                    <pre><code>&lt;a href="https://www.example.com"&gt;Vizitează acest site&lt;/a&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;img&gt;</strong>: Eticheta pentru imagini.
+                    <pre><code>&lt;img src="imagine.jpg" alt="Descrierea imaginii"&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong>: Etichetele pentru liste.
+                    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Element de listă neordonată&lt;/li&gt;
+    &lt;li&gt;Alt element de listă&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Primul element ordonat&lt;/li&gt;
+    &lt;li&gt;Al doilea element ordonat&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;div&gt;</strong>: Eticheta pentru gruparea secțiunilor de conținut.
+                    <pre><code>&lt;div&gt;
+    &lt;p&gt;Acesta este un paragraf într-un &lt;div&gt;.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Etichete pentru formatarea textului</h3>
+            <p>Există mai multe etichete utilizate pentru a formata textul într-o pagină HTML:</p>
+            <ul>
+                <li><strong>&lt;b&gt;</strong> sau <strong>&lt;strong&gt;</strong>: Pentru text îngroșat (bold).</li>
+                <li><strong>&lt;i&gt;</strong> sau <strong>&lt;em&gt;</strong>: Pentru text italic.</li>
+                <li><strong>&lt;u&gt;</strong>: Pentru text subliniat.</li>
+                <li><strong>&lt;br&gt;</strong>: Pentru a introduce o linie nouă.</li>
+                <li><strong>&lt;blockquote&gt;</strong>: Pentru a cita un pasaj.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Structurarea paginii cu etichete semantice</h3>
+            <p>HTML5 introduce etichete semantice care ajută la organizarea conținutului și la îmbunătățirea accesibilității:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Conține introducerea sau elementele de navigare ale paginii.</li>
+                <li><strong>&lt;nav&gt;</strong>: Secțiunea de navigare a unei pagini.</li>
+                <li><strong>&lt;main&gt;</strong>: Conținutul principal al paginii.</li>
+                <li><strong>&lt;section&gt;</strong>: O secțiune tematică dintr-o pagină.</li>
+                <li><strong>&lt;article&gt;</strong>: Conținut independent, cum ar fi un articol sau o postare.</li>
+                <li><strong>&lt;footer&gt;</strong>: Informații de la finalul paginii, cum ar fi drepturi de autor sau link-uri suplimentare.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Concluzie</h3>
+            <p>Etichetele HTML sunt elementele de bază pentru a construi și structura o pagină web. În această lecție, ai învățat despre cele mai comune etichete HTML și cum să le folosești corect. În următoarea lecție, vom aborda cum să stilizezi o pagină folosind CSS.</p>
+            <p><a href="lectie4.html">Treci la următoarea lecție: Elemente Avansate HTML</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COCIOABA DE ÎNVĂȚAT. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+
+</html>

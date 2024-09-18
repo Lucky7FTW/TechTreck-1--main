@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecția 4: Elemente Avansate HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo COCIOABA DE ÎNVĂȚAT" style="max-width: 300px;">
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Lecția 4: Elemente Avansate HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="lectii.html">Lecții</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lectie1.html">Lecția 1: Introducere în HTML</a></li>
+                        <li><a href="lectie2.html">Lecția 2: Structura HTML</a></li>
+                        <li><a href="lectie3.html">Lecția 3: Etichete HTML</a></li>
+                        <li><a href="lectie4.html">Lecția 4: Elemente Avansate HTML</a></li>
+                        <li><a href="lectie5.html">Lecția 5: Semantica HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 6</a></li>
+                        <li><a href="ComingSoon.html">Lecția 7</a></li>
+                        <li><a href="ComingSoon.html">Lecția 8</a></li>
+                        <li><a href="ComingSoon.html">Lecția 9</a></li>
+                        <li><a href="ComingSoon.html">Lecția 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Test de evaluare</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Înregistrare</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Introducere</h3>
+            <p>În această lecție, vom explora elemente HTML avansate, inclusiv formulare complexe, tabele și iFrame-uri. Aceste elemente sunt esențiale pentru construirea paginilor web funcționale și interactive.</p>
+        </section>
+
+        <section>
+            <h3>Formular Complex</h3>
+            <p>Formularele sunt esențiale pentru interacțiunea utilizatorului. Iată un exemplu de formular complex:</p>
+            <form action="submit_form.php" method="post">
+                <fieldset>
+                    <legend>Informații Personale</legend>
+                    <label for="fullname">Nume complet:</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">Adresă de email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="gender">Gen:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Masculin</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Feminin</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferințe</legend>
+                    <label for="newsletter">Abonează-te la newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+                    <label for="comments">Comentarii:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <label for="country">Țară:</label>
+                    <select id="country" name="country">
+                        <option value="ro">România</option>
+                        <option value="us">Statele Unite</option>
+                        <option value="uk">Regatul Unit</option>
+                    </select><br><br>
+
+                    <label for="file">Încarcă un fișier:</label>
+                    <input type="file" id="file" name="file"><br><br>
+
+                    <button type="submit">Trimite</button>
+                </fieldset>
+            </form>
+
+            <details>
+                <summary>Vezi codul HTML pentru Formular Complex</summary>
+                <pre class="code-container"><code>&lt;form action="submit_form.php" method="post"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Informații Personale&lt;/legend&gt;
+        &lt;label for="fullname"&gt;Nume complet:&lt;/label&gt;
+        &lt;input type="text" id="fullname" name="fullname" required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="email"&gt;Adresă de email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="gender"&gt;Gen:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="male"&gt;Masculin&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Feminin&lt;/label&gt;&lt;br&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;legend&gt;Preferințe&lt;/legend&gt;
+        &lt;label for="newsletter"&gt;Abonează-te la newsletter:&lt;/label&gt;
+        &lt;input type="checkbox" id="newsletter" name="newsletter"&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="comments"&gt;Comentarii:&lt;/label&gt;&lt;br&gt;
+        &lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="country"&gt;Țară:&lt;/label&gt;
+        &lt;select id="country" name="country"&gt;
+            &lt;option value="ro"&gt;România&lt;/option&gt;
+            &lt;option value="us"&gt;Statele Unite&lt;/option&gt;
+            &lt;option value="uk"&gt;Regatul Unit&lt;/option&gt;
+        &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="file"&gt;Încarcă un fișier:&lt;/label&gt;
+        &lt;input type="file" id="file" name="file"&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;button type="submit"&gt;Trimite&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+            </details>
+        </section>
+
+        <section>
+            <h3>Tabele</h3>
+            <p>Tabelele sunt utile pentru a organiza informațiile în rânduri și coloane. Iată un exemplu de tabel:</p>
+            <table border="1">
+                <caption>Exemplu de Tabel</caption>
+                <thead>
+                    <tr>
+                        <th>Coloană 1</th>
+                        <th>Coloană 2</th>
+                        <th>Coloană 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rând 1, Celulă 1</td>
+                        <td>Rând 1, Celulă 2</td>
+                        <td>Rând 1, Celulă 3</td>
+                    </tr>
+                    <tr>
+                        <td>Rând 2, Celulă 1</td>
+                        <td>Rând 2, Celulă 2</td>
+                        <td>Rând 2, Celulă 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Subsol tabel</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <details>
+                <summary>Vezi codul HTML pentru Tabel</summary>
+                <pre class="code-container"><code>&lt;table border="1"&gt;
+    &lt;caption&gt;Exemplu de Tabel&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Coloană 1&lt;/th&gt;
+            &lt;th&gt;Coloană 2&lt;/th&gt;
+            &lt;th&gt;Coloană 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rând 1, Celulă 1&lt;/td&gt;
+            &lt;td&gt;Rând 1, Celulă 2&lt;/td&gt;
+            &lt;td&gt;Rând 1, Celulă 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rând 2, Celulă 1&lt;/td&gt;
+            &lt;td&gt;Rând 2, Celulă 2&lt;/td&gt;
+            &lt;td&gt;Rând 2, Celulă 3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Subsol tabel&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+            </details>
+        </section>
+
+        <section>
+            <h3>iFrame-uri</h3>
+            <p>iFrame-urile sunt folosite pentru a încorpora conținut dintr-o altă pagină web. Iată un exemplu:</p>
+            <iframe src="https://www.example.com" width="600" height="400" title="Exemplu iFrame"></iframe>
+
+            <details>
+                <summary>Vezi codul HTML pentru iFrame</summary>
+                <pre class="code-container"><code>&lt;iframe src="https://www.example.com" width="600" height="400" title="Exemplu iFrame"&gt;&lt;/iframe&gt;</code></pre>
+            </details>
+        </section>
+
+        <section>
+            <h3>Concluzie</h3>
+            <p>În această lecție, am explorat elemente avansate HTML. Aceste cunoștințe sunt esențiale pentru a crea pagini web interactive și bine structurate. În lecția următoare, vom aborda semantica HTML pentru a înțelege mai bine structura documentelor web.</p>
+            <p><a href="lectie5.html">Continuă cu Lecția 5: Semantica HTML</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COCIOABA DE ÎNVĂȚAT. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+
+</html>

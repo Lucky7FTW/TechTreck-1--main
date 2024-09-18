@@ -1,0 +1,83 @@
+# TODO IN GENERAL!! NU UITA!! 
+
+-   Feedback după Quiz
+-   Îmbunătățirea design-ului
+-   Mai multe lectii posibil si cu css
+-   navigatie CLARA
+-   Impartire pe module: „Introducere în HTML”, „HTML Intermediar”, „HTML Avansat”
+-   TAGURI META PENTRU SEO MAI BUNE
+-   BEA O GURA DE APA
+-   modalitate de a marca lectile parcurse
+-   cheat sheet mai bun / acces la cheat sheet mai usor
+-   tema de light/dark mode
+
+-   Implementare baza de date pentru utilizatori
+-   Implementare baza de date pentru quiz
+-   Implementare baza de date pentru mesaje
+-   Implementare baza de date pentru scoruri
+-   Implementare baza de date pentru feedback
+
+
+Pagini Implementate:
+
+index.html
+    navigatie intre lectii si resurse
+    introducere generala
+
+#   TODO: pop-up de bun venit, cookies
+
+lectie1.html
+    introducere HTML
+    exemple de cod HTML de baza
+
+lectie2.html
+    explica structura unui document HTML
+    exemple de elemente HTML esentiale
+
+lectie3.html
+    detaliza tag-urile HTML
+    include exemple practice pentru tag-uri precum p, a, img, ul, li, etc.
+
+lectie4.html 
+    elemente avanzate HTML
+
+lectie5.html 
+    semantica HTML
+
+quiz.html
+    intrebari despre HTML
+
+#    TODO: impementare mod de autoevaluare,mai multe intrebari, limita de timp, scor vizibil pe profil, sa apara dupa fiecare lectie un scur quiz?
+#   sau un quiz general la finalul tuturor lectiilor, 
+
+cheatsheet.html
+    lista cu toate tag-urile HTML si descrierea lor
+
+contact.html
+    formular de contact
+
+#   TODO: implementare legatura cu o baza de date care sa salveze mesajele si sa le trimita la admini pe mail
+
+login.html
+    login pentru utilizatori
+
+#    TODO: pagina de admin sa poata accesa intrebarile din quiz si sa le poata modifica
+
+register.html
+    register pentru utilizatori
+
+#    TODO: implementare baza de date pentru utilizatori, validare formular, verificare daca userul exista deja, email de confirmare
+
+Pagini de implementat:
+profil
+
+progress
+
+parte publica
+
+
+
+
+
+
+

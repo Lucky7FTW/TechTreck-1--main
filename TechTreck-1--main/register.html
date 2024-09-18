@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare - COCIOABA DE ÎNVĂȚAT</title>
+
+    <meta name="description" content="Creează-ți un cont pe COCIOABA DE ÎNVĂȚAT pentru a accesa lecții și resurse educaționale. Completează formularul de înregistrare acum.">
+    <meta name="keywords" content="înregistrare, cont nou, HTML, COCIOABA DE ÎNVĂȚAT, dezvoltare web">
+    <meta name="author" content="COCIOABA DE ÎNVĂȚAT">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo COCIOABA DE ÎNVĂȚAT" style="max-width: 300px;">
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Cheat Sheet HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="lectii.html">Lecții</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lectie1.html">Lecția 1: Introducere în HTML</a></li>
+                        <li><a href="lectie2.html">Lecția 2: Structura HTML</a></li>
+                        <li><a href="lectie3.html">Lecția 3: Etichete HTML</a></li>
+                        <li><a href="lectie4.html">Lecția 4: Elemente Avansate HTML</a></li>
+                        <li><a href="lectie5.html">Lecția 5: Semantica HTML</a></li>
+                        <li><a href="ComingSoon.html">Lecția 6</a></li>
+                        <li><a href="ComingSoon.html">Lecția 7</a></li>
+                        <li><a href="ComingSoon.html">Lecția 8</a></li>
+                        <li><a href="ComingSoon.html">Lecția 9</a></li>
+                        <li><a href="ComingSoon.html">Lecția 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Test de evaluare</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Înregistrare</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <header>
+        <h1>COCIOABA DE ÎNVĂȚAT</h1>
+        <h2>Înregistrează-te</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Creează-ți un cont nou</h3>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>Informații personale</legend>
+
+                    <label for="firstname">Prenume:</label><br>
+                    <input type="text" id="firstname" name="firstname" required><br><br>
+
+                    <label for="lastname">Nume:</label><br>
+                    <input type="text" id="lastname" name="lastname" required><br><br>
+
+                    <label for="email">Adresă de email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Date de autentificare</legend>
+
+                    <label for="username">Nume de utilizator:</label><br>
+                    <input type="text" id="username" name="username" required><br><br>
+
+                    <label for="password">Parolă:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="confirm-password">Confirmă parola:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                </fieldset>
+
+                <input type="submit" value="Înregistrează-te">
+            </form>
+            <p>Ai deja un cont? <a href="login.html">Conectează-te aici</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COCIOABA DE ÎNVĂȚAT. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+
+</html>
